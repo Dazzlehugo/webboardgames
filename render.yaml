@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tableclub
+    runtime: node
+    plan: free
+    buildCommand: npm run check
+    startCommand: npm start
+    healthCheckPath: /api/catalog
+    envVars:
+      - key: NODE_VERSION
+        value: 24.22.1

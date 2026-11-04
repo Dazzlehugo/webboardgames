@@ -1,0 +1,16 @@
+{
+  "name": "tableclub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/games.test.js && node test/server.test.js",
+    "check": "node --check server.js && node --check games.js && node --check public/app.js",
+    "test:browser": "node scripts/browser-smoke.mjs && node scripts/mobile-games-smoke.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
